@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo Avanzado de Grid</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 25px;
+            padding: 20px;
+        }
+
+        /* Caja de contenido */
+        .box {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contenido 1 */
+        .box-1 {
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+        }
+
+        /* Contenido 2 */
+        .box-2 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+
+        /* Contenido 3 */
+        .box-3 {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+
+        /* Contenido 4 */
+        .box-4 {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+
+        /* Contenido 5 */
+        .box-5 {
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-1">
+            <h2>Contenido 1</h2>
+            <img src="imagen-post1.jpg" style="width: 100%;"/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="box box-2">
+            <h2>Contenido 2</h2>
+            <p>Nulla at tortor facilisis, aliquam tortor id, bibendum neque.</p>
+        </div>
+        <div class="box box-3">
+            <h2>Contenido 3</h2>
+            <p>Etiam tristique leo at metus dictum, at sollicitudin quam efficitur.</p>
+        </div>
+        <div class="box box-4">
+            <h2>Contenido 4</h2>
+            <p>Vestibulum sed ligula ut nisi bibendum malesuada.</p>
+        </div>
+        <div class="box box-5">
+            <h2>Contenido 5</h2>
+            <p>Curabitur et est eget justo sodales rhoncus.</p>
+        </div>
+    </div>
+</body>
+
+</html>
